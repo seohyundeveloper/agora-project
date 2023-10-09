@@ -410,88 +410,6 @@ main {
       }
     }
   }
-  // .main__slide__box{
-  //   position: absolute;
-  //   top: -191px;
-  //   left: 304px;
-  //   ul {
-  //     display: flex;
-  //     gap: 37px;
-  //     li {
-  //       width: 397px;
-  //       height: 476px;
-  //       background-color: #e0e0e0;
-  //       border: 1px solid #B3B3B3;
-  //       text-align: center;
-  //       font-family: "Poppins";
-  //       font-style: normal;
-  //       line-height: normal;
-  //       .main__slide__box-logo{
-  //         height: 186px;
-  //         position: relative;
-  //         .float__imgs{
-  //           position: absolute;
-  //           top: 50%;
-  //           left: 50%;
-  //           transform: translate(-50%, -50%);
-  //         }
-  //         .float__back__imgs{
-  //           width: 110px;
-  //           display: block;
-  //           height: 110px;
-  //           background: #767676;
-  //           border-radius: 50%;
-  //           position: absolute;
-  //           top: 50%;
-  //           left: 50%;
-  //           transform: translate(-50%, -50%);
-  //         }
-  //         .float__txt{
-  //           color: #fff;
-  //           font-weight: 500;
-  //           font-size: 35px;
-  //           position: absolute;
-  //           top: 50%;
-  //           left: 50%;
-  //           transform: translate(-50%, -50%);
-  //         }
-  //       }
-  //       .main__slide__box-text{
-  //         text-align: justify;
-  //         width: 287px;
-  //         font-size: 16px;
-  //         font-weight: 400;
-  //         margin: 0 auto;
-  //       }
-  //       .main__slide__box-verb{
-  //         display: flex;
-  //         flex-direction: column;
-  //         justify-content: center;
-  //         span {
-  //           font-size: 16px;
-  //           font-weight: 400;
-  //           &:last-child {
-  //             font-weight: 600;
-  //           }
-  //         }
-  //       }
-  //       &:first-child {
-  //         .main__slide__box-verb{
-  //           margin-top: 34px;
-  //         }
-  //       }
-  //       &:nth-child(2) {
-  //         .main__slide__box-verb{
-  //           margin-top: 18px;
-  //         }
-  //         .main__slide__box-text{
-  //           letter-spacing: -1px;
-  //         }
-  //       }
-  //     }
-  //   }  
-  // }
-
 }
 
 .main__section__8 {
@@ -553,9 +471,6 @@ main {
         cursor: pointer;
       }
     }
-  }
-  .main__contact__pic{
-
   }
 }
 
@@ -636,9 +551,7 @@ footer {
 .slick-slider .slick-list .slick-track{
   display: flex;
   gap: 70px;
-  .slick-slide {
-   
-  }
+  
   .slick-text {
     font-family: Poppins;
     font-size: 23px;
