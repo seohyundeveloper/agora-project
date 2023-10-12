@@ -121,6 +121,18 @@ $lightgrey: #E8E8E8;
           font-weight: 400;
           line-height: normal;
         }
+        &:nth-child(2),
+        &:nth-child(3), 
+        &:nth-child(4),
+        &:nth-child(5)  {
+          .box__txt {
+            span {
+              &:last-child {
+                margin-top: 8px;
+              }
+            }
+          }
+        }
       }
     }
   } 
