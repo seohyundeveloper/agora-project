@@ -15,7 +15,7 @@ const Carousel = (() =>{
               autoplay={{ delay: 5000, disableOnInteraction: false }}
               className='MyTextSwiper'
               spaceBetween={50}
-              onSlideChange={() => console.log('slide change')}
+              onSlideChange={() => {}}
               onSwiper={(swiper) => console.log(swiper)}>
               <SwiperSlide>
                <div className='partner__list'>

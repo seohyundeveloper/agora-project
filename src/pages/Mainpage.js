@@ -123,17 +123,6 @@ const Mainpage = ( () => {
         </div>
       </section>
       <SlideTextBanner />
-      {/* <section className="main__section__5">
-        <div className='main__fifth__left'>
-          <div className='main__fifth__text-box'>
-            <span className='left__title'>Partners of</span>
-            <span className='left__subtitle'>AGORA</span>
-          </div>
-        </div>
-        <div className='main__fifth__right'>
-          <Carousel />
-        </div>
-      </section> */}
       <section className="main__section__6">
         <div className='main_article__wrapper'>
           <div className='main__article__title'>
@@ -171,124 +160,84 @@ const Mainpage = ( () => {
              autoplay={{ delay: 5000, disableOnInteraction: false }}
              className='MySwiper'
              spaceBetween={37}
-             onSlideChange={() => console.log('slide change')}
-             onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        <div className='main__wrap'>
-          <div className='main__slide__box-logo'>
-            <span className='float__imgs'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
-                <circle cx="58" cy="58" r="58" fill="#767676"/>
-              </svg>
-            </span>
-            <span className='float__txt'>Vibe</span>
+             onSlideChange={() => {}}
+             onSwiper={(swiper) => console.log(swiper)}>
+        <SwiperSlide>
+          <div className='main__wrap'>
+            <div className='main__slide__box-logo'>
+              <span className='float__imgs'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
+                  <circle cx="58" cy="58" r="58" fill="#767676"/>
+                </svg>
+              </span>
+              <span className='float__txt'>Vibe</span>
+            </div>
+            <div className='main__slide__box-text'>
+              “I can't say enough good things about Agora production. With their strategic guidance and engaging content, we've witnessed a steady growth in our follower base, and our posts now receive much higher levels of interaction.”
+            </div>
+            <div className='main__slide__box-verb1'>
+              <span>Daniel Samuel Flowrence,</span>
+              <span>Spain Vibe Tour</span>
+            </div>
           </div>
-          <div className='main__slide__box-text'>
-            “I can't say enough good things about Agora production. With their strategic guidance and engaging content, we've witnessed a steady growth in our follower base, and our posts now receive much higher levels of interaction.”
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='main__wrap'>
+            <div className='main__slide__box-logo'>
+              <span className='float__back__imgs'>
+                <img src={env.PUBLIC_URL + '/assets/imgs-main/image-36.png'} alt='outtake' />
+              </span>
+            </div>
+            <div className='main__slide__box-text'>
+            “Agora Canada demonstrates a meticulously planning and executing visual communication strategies. As a dedicated partner, we remain steadfast in our pursuit of optimal solutions, consistently progressing with an unwavering commitment to efficiency and systematization.”
+            </div>
+            <div className='main__slide__box-verb2'>
+              <span>Jusung Hyung,</span>
+              <span>outtake</span>
+            </div>
           </div>
-          <div className='main__slide__box-verb1'>
-            <span>Daniel Samuel Flowrence,</span>
-            <span>Spain Vibe Tour</span>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='main__wrap'>
+            <div className='main__slide__box-logo'>
+              <span className='float__imgs'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
+                  <circle cx="58" cy="58" r="58" fill="#767676"/>
+                </svg>
+              </span>
+              <span className='float__txt'>KIM</span>
+            </div>
+            <div className='main__slide__box-text'>
+            “It was my honor to work with this wonderful company! The preview video in my album results from his passion and deep research. 
+            I am very glad to introduce his enthusiasm to you guys. I know that he will do his best for his fantastic clients!”
+            </div>
+            <div className='main__slide__box-verb1'>
+              <span>Jiyun Kim,</span>
+              <span>Pianist</span>
+            </div>
           </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='main__wrap'>
-          <div className='main__slide__box-logo'>
-            <span className='float__back__imgs'>
-              <img src={env.PUBLIC_URL + '/assets/imgs-main/image-36.png'} alt='outtake' />
-            </span>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='main__wrap'>
+            <div className='main__slide__box-logo'>
+              <span className='float__imgs'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
+                  <circle cx="58" cy="58" r="58" fill="#767676"/>
+                </svg>
+              </span>
+              <span className='float__txt'>KIM</span>
+            </div>
+            <div className='main__slide__box-text'>
+            “It was my honor to work with this wonderful company! The preview video in my album results from his passion and deep research. 
+            I am very glad to introduce his enthusiasm to you guys. I know that he will do his best for his fantastic clients!”
+            </div>
+            <div className='main__slide__box-verb1'>
+              <span>Jiyun Kim,</span>
+              <span>Pianist</span>
+            </div>
           </div>
-          <div className='main__slide__box-text'>
-          “Agora Canada demonstrates a meticulously planning and executing visual communication strategies. As a dedicated partner, we remain steadfast in our pursuit of optimal solutions, consistently progressing with an unwavering commitment to efficiency and systematization.”
-          </div>
-          <div className='main__slide__box-verb2'>
-            <span>Jusung Hyung,</span>
-            <span>outtake</span>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='main__wrap'>
-          <div className='main__slide__box-logo'>
-            <span className='float__imgs'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
-                <circle cx="58" cy="58" r="58" fill="#767676"/>
-              </svg>
-            </span>
-            <span className='float__txt'>KIM</span>
-          </div>
-          <div className='main__slide__box-text'>
-          “It was my honor to work with this wonderful company! The preview video in my album results from his passion and deep research. 
-           I am very glad to introduce his enthusiasm to you guys. I know that he will do his best for his fantastic clients!”
-          </div>
-          <div className='main__slide__box-verb1'>
-            <span>Jiyun Kim,</span>
-            <span>Pianist</span>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='main__wrap'>
-          <div className='main__slide__box-logo'>
-            <span className='float__imgs'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
-                <circle cx="58" cy="58" r="58" fill="#767676"/>
-              </svg>
-            </span>
-            <span className='float__txt'>KIM</span>
-          </div>
-          <div className='main__slide__box-text'>
-          “It was my honor to work with this wonderful company! The preview video in my album results from his passion and deep research. 
-           I am very glad to introduce his enthusiasm to you guys. I know that he will do his best for his fantastic clients!”
-          </div>
-          <div className='main__slide__box-verb1'>
-            <span>Jiyun Kim,</span>
-            <span>Pianist</span>
-          </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
-
-     {/* <div className='main__slide__box'>
-          <ul>
-            <li>
-              <div className='main__slide__box-logo'>
-                <span className='float__imgs'>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="#767676">
-                    <circle cx="58" cy="58" r="58" fill="#767676"/>
-                  </svg>
-                </span>
-                <span className='float__txt'>Vibe</span>
-              </div>
-              <div className='main__slide__box-text'>
-                “I can't say enough good things about Agora production. With their strategic guidance and engaging content, we've witnessed a steady growth in our follower base, and our posts now receive much higher levels of interaction.”
-              </div>
-              <div className='main__slide__box-verb'>
-                <span>Daniel Samuel Flowrence,</span>
-                <span>Spain Vibe Tour</span>
-              </div>
-            </li>
-            <li>
-              <div className='main__slide__box-logo'>
-                <span className='float__back__imgs'>
-                  <img src={env.PUBLIC_URL + '/assets/imgs-main/image-36.png'} alt='outtake' />
-                </span>
-              </div>
-              <div className='main__slide__box-text'>
-              “Agora Canada demonstrates a meticulously planning and executing visual communication strategies. As a dedicated partner, we remain steadfast in our pursuit of optimal solutions, consistently progressing with an unwavering commitment to efficiency and systematization.”
-              </div>
-              <div className='main__slide__box-verb'>
-                <span>Jusung Hyung,</span>
-                <span>outtake</span>
-              </div>
-            </li>
-          </ul>
-        </div> */}
-
-
-
+        </SwiperSlide>
+      </Swiper>
       </section>
       <section className="main__section__8">
         <article className='main__article__contact'>
