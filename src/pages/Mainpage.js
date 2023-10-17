@@ -15,7 +15,12 @@ import group from '../util/icons/group.svg';
 import Mybottons from '../components/Mybuttons';
 import peopleimg from '../util/imgs/image-16.png';
 import SlideTextBanner from '../components/Slidetextbanner';
-
+import mgroup from '../util/icons/m_group.svg';
+import miconbitcoin from '../util/icons/m_icon-bitcoin-card.svg';
+import mshare from '../util/icons/m_icon-share.svg';
+import mgoogles from '../util/icons/m_icon-google-1.svg';
+import mcamera from '../util/icons/m_vector.svg';
+import mpencil from '../util/icons/m_icon-design-pencil.svg';
 const env = process.env;
 
 const Mainpage = ( () => {
@@ -50,12 +55,20 @@ const Mainpage = ( () => {
                 className="main__imgs__squre-img"
                 alt="square" />
           </div>
+          <div className='main__imgs__mobile'>
+            <img src={env.PUBLIC_URL + '/assets/imgs-main/image-14.png'} 
+                  width={'358px'} height={'109px'}
+                  alt="streetimgs-mobile"/>
+          </div>
         </div>
         <div className="main__last-text">
           <img src={lineup} alt='lineup' />
           <div className="main__last-text__space">AGORA AS OPEN SPACE</div>  
         </div>  
       </section>
+      <div className='main__partner-display__mobile'>
+        <SlideTextBanner />
+      </div>
       <section className="main__section__3">
         <div className="left__text">Our Services</div>
         <div className="right__text">Discover our marketing company, 
@@ -69,7 +82,6 @@ const Mainpage = ( () => {
         <img src={linebottom} 
              className='main__line-bottom'
              alt='linebottom' />
-       
         <div className='main__figure'>
           <div className='main__figure__item'>
             <span className='item__title'>+ 70</span>
@@ -122,7 +134,64 @@ const Mainpage = ( () => {
          <Mybottons text={'Find more about service'} />
         </div>
       </section>
-      <SlideTextBanner />
+      <section className='main__section__4_mobile'>
+        <div className='mobile__icons__list'>
+         <ul>
+          <li>
+            <div className='moblie__icon'>
+              <img src={mshare} alt='mshare'/>
+            </div>
+            <div className='moblie__text'>Branding Marketing</div>
+          </li>
+          <li>
+            <div className='moblie__icon'>
+              <img src={mgoogles} alt='mgoogles'/>
+            </div>
+            <div className='moblie__text'>Google Business<br />Set up</div>
+          </li>
+          <li>
+            <div className='moblie__icon'>
+              <img src={mcamera} alt='mcamera'/>
+            </div>
+            <div className='moblie__text'>Photography<br />Videography</div>
+          </li>
+          <li>
+            <div className='moblie__icon'>
+              <img src={miconbitcoin} alt='miconbitcoin'/>
+            </div>
+            <div className='moblie__text'>SEO set up</div>
+          </li>
+          <li>
+            <div className='moblie__icon'>
+              <img src={mpencil} alt='mpencil'/>
+            </div>
+            <div className='moblie__text'>Web / App<br />Design</div>
+          </li>
+          <li>
+            <div className='moblie__icon'>
+              <img src={mgroup} alt='mgroup'/>
+            </div>
+            <div className='moblie__text'>News / Ads</div>
+          </li>
+         </ul>
+        </div>
+        <div className='mobile__figure'>
+          <div className='mobile__figure__item'>
+            <span className='mobile__item__title'>+ 70</span>
+            <span className='mobile__item__people'>Clients</span>
+          </div>
+          <div className='mobile__figure__item'>
+            <span className='mobile__item__title'>+ 10</span>
+            <span className='mobile__item__people'>Partners</span>
+          </div>
+        </div>
+        <div className='mobile__btns'>
+          <Mybottons text={'Find More'} />
+        </div>
+      </section>
+      <div className='main__partner-display'>
+        <SlideTextBanner />
+      </div>
       <section className="main__section__6">
         <div className='main_article__wrapper'>
           <div className='main__article__title'>
@@ -239,6 +308,13 @@ const Mainpage = ( () => {
         </SwiperSlide>
       </Swiper>
       </section>
+{/* 모바일 파트 추가하기 */}
+      <section className='main__section__7-mobile'>
+        <div className='mobile__slide__banner'>  
+
+        </div>
+      </section>
+
       <section className="main__section__8">
         <article className='main__article__contact'>
           <div className='main__contact__title'>

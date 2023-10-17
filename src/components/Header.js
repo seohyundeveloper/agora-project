@@ -24,6 +24,11 @@ const Header = (()=> {
             <Link to={"/contact"}>Contact Us</Link>
           </li>
         </ul>
+        <div className='header__mobile'>
+          <Link to={"/"}>
+            <img src={env.PUBLIC_URL + '/assets/imgs-main/agora_logo_1.png'} width={'94px'} height={'19px'} alt="logo"/>
+          </Link>
+        </div>
       </header>
     </>
   )
