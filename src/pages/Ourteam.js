@@ -15,7 +15,9 @@ const Ourteam = ( () => {
   return(
     <>
     <div className='team__wrapper'> 
-      <img src={teambanner} alt='teambanner' width={1280} height={268}/>
+      <img src={teambanner} alt='teambanner' 
+           className='team__top__banner-mobile'
+           width={1280} height={268}/>
       <section className='team__introduce'>
         <div className='team__introduce__title'>
           <span>OUR TEAM,</span>
@@ -74,7 +76,7 @@ const Ourteam = ( () => {
                 <img src={chloe} alt="chloe" />
               </div>
               <div className="img-list__text">
-                <span>Spain Branch Directo</span>
+                <span>Spain Branch Director</span>
                 <span className="img-list__text__back">Chloe Kwon</span>
               </div>
             </li>
@@ -86,7 +88,7 @@ const Ourteam = ( () => {
                 <span className="img-list__text-up">Noah Yun</span>
                 <span className="img-list__text-down">
                   <div>UX UI Designe</div>
-                  <div>Product Designe</div>
+                  <div>Product Designer</div>
                 </span>
               </div>
             </li>

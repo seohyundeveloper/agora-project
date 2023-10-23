@@ -311,7 +311,67 @@ const Mainpage = ( () => {
 {/* 모바일 파트 추가하기 */}
       <section className='main__section__7-mobile'>
         <div className='mobile__slide__banner'>  
-
+          <Swiper modules={[Autoplay]}
+                  rewind={true}
+                  slidesPerView={1} 
+                  loop={true} 
+                  autoplay={{ delay: 5000, disableOnInteraction: false }}
+                  className='MyMobileMainSwiper'
+                  spaceBetween={43}
+                  onSlideChange={() => {}}
+                  onSwiper={(swiper) => console.log(swiper)}>
+            <SwiperSlide>
+              <div className='mobile__banner__wrpper'>
+                <ul className='mobile__banner__list'>
+                  <li>
+                    <div className='mobile__list-top'>
+                      <span>Vibe</span>
+                    </div>
+                    <div className='mobile__list-middle'>
+                      <span>
+                       “I can't say enough good things about  Agora production. With their strategic guidance and engaging content, we've witnessed a steady growth in our follower base, and our posts now receive much higher levels of interaction.”
+                      </span>
+                    </div>
+                    <div className='mobile__list-bottom'>
+                      <span>Daniel Samuel Flowrence,</span>
+                      <span>Spain Vibe Tour</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='mobile__banner__wrpper'>
+                <ul className='mobile__banner__list'>
+                  <li>
+                    <div className='mobile__list-top'>
+                      <span>KIM</span>
+                    </div>
+                    <div className='mobile__list-middle'>
+                      <span>
+                       “It was my honor to work with this wonderful company! The preview video in my album results from his passion and deep research. 
+                       I am very glad to introduce his enthusiasm to you guys. I know that he will do his best for his fantastic clients!”
+                      </span>
+                    </div>
+                    <div className='mobile__list-bottom'>
+                      <span>Jiyun Kim,</span>
+                      <span>Pianist</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            <button className="arrow-left arrow">
+              <img src={env.PUBLIC_URL + '/assets/imgs-main/arrow-left.svg'} 
+                    width={'12px'} height={'22px'}
+                    alt="mobile-arrow-left"/>
+            </button>
+            <button className="arrow-right arrow">
+              <img src={env.PUBLIC_URL + '/assets/imgs-main/arrow-right.svg'} 
+                      width={'12px'} height={'22px'}
+                      alt="mobile-arrow-right"/>
+            </button>
+          </Swiper>
         </div>
       </section>
 
@@ -322,9 +382,9 @@ const Mainpage = ( () => {
             <span>AGORA PRODUCTION</span>
           </div>
           <div className='main__contact__explain'>
-            Tell us a little bit about your 
-            project / company / concern. <br />
-            We&#39;ll be in touch shortly.
+            <span> Tell us a little bit about your 
+            project / company / concern.</span>
+            <span> We&#39;ll be in touch shortly.</span>
           </div>
           <div className='main__contact__forms'>
             <label>Name</label>
@@ -342,7 +402,7 @@ const Mainpage = ( () => {
             <label>Please add details or relevant questions</label>
             <textarea />
           </div>
-          <div>
+          <div className='mobile__contact__btns'>
             <Mybottons text={'Get Free Consultation'}/>
           </div>
         </article>
